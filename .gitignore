@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes Virtuais
+venv/
+env/
+.env
+
+# Logs e Dados temporários
+*.log
+.vscode/
+
+# Se o modelo fosse GIGANTE (>100mb), deveríamos ignorar, 
+# mas como é pequeno, podemos deixar comentado para subir
+# models/*.keras
