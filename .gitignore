@@ -2,16 +2,57 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
 
 # Ambientes Virtuais
 venv/
 env/
+.venv/
 .env
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # Logs e Dados temporários
 *.log
-.vscode/
+*.sqlite3
+*.db
 
-# Se o modelo fosse GIGANTE (>100mb), deveríamos ignorar, 
-# mas como é pequeno, podemos deixar comentado para subir
-# models/*.keras
+# Datasets grandes (não versionar)
+07-transfer-learning/dados/cats_and_dogs_filtered/train/
+07-transfer-learning/dados/cats_and_dogs_filtered/validation/
+*.zip
+*.tar.gz
+*.csv
+*.h5
+
+# Modelos treinados pesados (>10MB)
+# Manter apenas modelos pequenos de demonstração
+models/*.h5
+models/*.pb
+07-transfer-learning/*.keras
+07-transfer-learning/*.h5
+
+# Cache do TensorFlow/Keras
+.keras/
+tensorboard_logs/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
