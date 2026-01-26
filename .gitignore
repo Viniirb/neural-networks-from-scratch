@@ -52,6 +52,13 @@ models/*.pb
 .keras/
 tensorboard_logs/
 
+# Pasta 09 (experimentos e artefatos gerados)
+09-deep-mlp-parkinson/mlruns/
+09-deep-mlp-parkinson/**/*.keras
+09-deep-mlp-parkinson/**/*.h5
+09-deep-mlp-parkinson/**/*.ckpt
+09-deep-mlp-parkinson/**/*.tfevents.*
+
 # Arquivos do sistema
 .DS_Store
 Thumbs.db
