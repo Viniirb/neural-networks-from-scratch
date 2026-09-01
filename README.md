@@ -1,571 +1,228 @@
 <div align="center">
 
-# 🧠 Deep Learning Journey: From Perceptron to Transformers
+# Deep Learning Journey
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6366F1&center=true&vCenter=true&width=900&lines=From+Perceptron+to+CNN+%26+NLP;Pure+Python+%2B+TensorFlow+%2B+Keras;MLP%2C+Backprop%2C+Computer+Vision%2C+Transfer+Learning;LSTM%2C+Transformers+%26+Sentiment+Analysis" alt="Typing SVG" />
+### Do perceptron a CNNs, LSTMs e Transformers com exemplos práticos em Python
 
-<br/>
-
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-3.x-D00000?style=for-the-badge&logo=keras&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/🤗_Hugging_Face-Transformers-FFD21E?style=for-the-badge)
-
-![NumPy](https://img.shields.io/badge/NumPy-2.x-013243?style=flat-square&logo=numpy&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-4.x-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-2.x-150458?style=flat-square&logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-3.x-11557c?style=flat-square)
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python smoke check](https://github.com/Viniirb/neural-networks-from-scratch/actions/workflows/python-smoke.yml/badge.svg)](https://github.com/Viniirb/neural-networks-from-scratch/actions/workflows/python-smoke.yml)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
----
+Um laboratório educacional, em português, que conecta fundamentos matemáticos,
+implementações *from scratch* e aplicações com frameworks modernos.
 
-### 🎯 Um portfólio completo de Deep Learning
-
-*Da matemática básica de um neurônio até arquiteturas modernas de Transformers e Transfer Learning*
+[Começar](#começo-rápido) · [Explorar os módulos](#trilha-de-aprendizado) · [Contribuir](CONTRIBUTING.md) · [Roadmap](ROADMAP.md)
 
 </div>
 
-## 📖 Sobre o Projeto
+## Por que este projeto existe?
 
-Este repositório documenta uma **jornada completa de aprendizado em Deep Learning**, partindo dos fundamentos matemáticos de um único neurônio até arquiteturas state-of-the-art como CNNs, LSTMs e Transformers. Cada módulo foi desenvolvido com foco em **compreensão profunda** e **implementação prática**, incluindo versões "from scratch" e com frameworks modernos.
+Materiais de deep learning frequentemente começam em APIs de alto nível sem
+mostrar o que acontece por baixo, ou explicam a matemática sem chegar a um
+programa executável. Este repositório aproxima essas duas perspectivas:
 
-### ✨ Diferenciais
+- implementações pequenas para compreender pesos, bias, ativações e gradientes;
+- comparações entre código manual e bibliotecas como TensorFlow/Keras;
+- exemplos progressivos de classificação, regressão, visão computacional e NLP;
+- scripts independentes que podem ser estudados e modificados por módulo;
+- conteúdo e instruções voltados à comunidade de língua portuguesa.
 
-- 🔍 **Implementações from scratch**: entenda a matemática por trás das redes neurais
-- 🧪 **Progressão didática**: do simples ao complexo, com exemplos práticos
-- 🎨 **Projetos reais**: MNIST, Titanic, previsão de preços, análise de sentimento
-- 🚀 **Técnicas modernas**: Transfer Learning, LSTM, Transformers (BERT)
-- 📊 **Visualizações**: gráficos de treinamento, análises exploratórias e métricas
-- 💾 **Modelos persistidos**: salve e reutilize modelos treinados
+O projeto é educacional e está em evolução. Ele não oferece modelos prontos para
+uso em produção nem substitui validação científica, revisão de segurança ou
+avaliação de viés para aplicações reais.
 
+## Trilha de aprendizado
 
-## 📌 Conteúdo
+| Módulo | Tema | O que você pratica | Implementação principal |
+| --- | --- | --- | --- |
+| [`01`](01-fundamentos-perceptron) | Perceptron | neurônio, pesos, bias e função degrau | Python e NumPy |
+| [`02`](02-mpl-classificacao) | MLP e classificação | XOR, backpropagation e Iris | do zero e Keras |
+| [`03`](03-cnn-visao-computacional) | Visão computacional | MLP versus CNN no MNIST | TensorFlow/Keras |
+| [`04`](04-app-inferencia) | Inferência | carregamento de modelo e predição | Keras |
+| [`05`](05-data-science-titanic) | Data science | exploração, preparação e classificação | Pandas e Keras |
+| [`06`](06-regressao-casas) | Regressão | normalização e previsão de valores | scikit-learn e Keras |
+| [`07`](07-transfer-learning) | Transfer learning | VGG16, data augmentation e fine-tuning | TensorFlow/Keras |
+| [`08`](08-nlp-sentimento) | NLP | sentimento com LSTM e Transformers | Keras e Hugging Face |
+| [`09`](09-deep-mlp-parkinson) | Experimentação | comparação de MLPs e rastreamento | Keras e MLflow |
 
-<details open>
-<summary><b>Navegação Rápida</b></summary>
+```mermaid
+flowchart LR
+    A[01 · Perceptron] --> B[02 · MLP]
+    B --> C[03 · CNN]
+    C --> D[04 · Inferência]
+    B --> E[05 · Classificação]
+    B --> F[06 · Regressão]
+    C --> G[07 · Transfer learning]
+    B --> H[08 · NLP]
+    B --> I[09 · Experimentos com MLflow]
+```
 
-- [📖 Sobre o Projeto](#-sobre-o-projeto)
-- [📂 Estrutura dos Módulos](#-estrutura-dos-módulos)
-- [🚀 Quick Start](#-quick-start)
-- [▶️ Executando os Scripts](#️-executando-os-scripts)
-- [📊 Resultados e Métricas](#-resultados-e-métricas)
-- [🧩 Modelos Treinados](#-modelos-treinados)
-- [🛠️ Tecnologias Utilizadas](#️-tecnologias-utilizadas)
-- [📚 Aprendizados](#-aprendizados)
-- [🤝 Contribuindo](#-contribuindo)
-- [🗺️ Roadmap](ROADMAP.md)
-- [👤 Autor](#-autor)
+Você não precisa executar tudo em sequência. Os módulos `01` e `02` formam a
+base conceitual; depois deles, escolha a trilha mais relevante para seu estudo.
 
-</details>
-
----
-
-## 📂 Estrutura dos Módulos
-
-O projeto está organizado em **9 módulos progressivos**, cada um explorando diferentes aspectos do Deep Learning:
-
-<table>
-<tr>
-<td width="50%">
-
-### 🟢 Módulos Fundamentais
-
-#### 01 - Fundamentos do Perceptron
-**Objetivo:** Compreender a matemática básica  
-**Técnicas:**
-- Neurônio artificial from scratch
-- Função de ativação (step function)
-- Pesos, bias e forward propagation
-- Portas lógicas (AND, OR)
-
-**Arquivos:**
-- [`neuronio_simples.py`](01-fundamentos-perceptron/neuronio_simples.py)
-- [`neuronio_que_aprende.py`](01-fundamentos-perceptron/neuronio_que_aprende.py)
-
----
-
-#### 02 - Multi-Layer Perceptron (MLP)
-**Objetivo:** Resolver problemas não-lineares  
-**Técnicas:**
-- Backpropagation from scratch
-- XOR problem (clássico)
-- Classificação multiclasse (Iris dataset)
-- Comparação: Python puro vs Keras
-
-**Arquivos:**
-- [`rede_xor_pura.py`](02-mpl-classificacao/rede_xor_pura.py)
-- [`rede_xor_keras.py`](02-mpl-classificacao/rede_xor_keras.py)
-- [`rede_iris.py`](02-mpl-classificacao/rede_iris.py)
-
----
-
-#### 03 - Convolutional Neural Networks (CNN)
-**Objetivo:** Visão computacional  
-**Técnicas:**
-- Conv2D layers e pooling
-- Feature extraction automática
-- MNIST digit recognition
-- Comparação MLP vs CNN
-
-**Arquivos:**
-- [`rede_mnist_mpl.py`](03-cnn-visao-computacional/rede_mnist_mpl.py)
-- [`rede_mnist_cnn.py`](03-cnn-visao-computacional/rede_mnist_cnn.py)
-
----
-
-#### 04 - Modelo em Produção
-**Objetivo:** Deploy e inferência  
-**Técnicas:**
-- Carregar modelos treinados (.keras)
-- Fazer predições em novos dados
-- Pipeline de inferência
-
-**Arquivos:**
-- [`usar_ia.py`](04-app-inferencia/usar_ia.py)
-
-</td>
-<td width="50%">
-
-### 🔵 Módulos Avançados
-
-#### 05 - Data Science: Titanic
-**Objetivo:** Análise exploratória + predição  
-**Técnicas:**
-- EDA (Exploratory Data Analysis)
-- Feature engineering
-- Tratamento de missing values
-- Classificação binária (survival)
-
-**Arquivos:**
-- [`titanic_analise.py`](05-data-science-titanic/titanic_analise.py)
-
----
-
-#### 06 - Regressão: Preços de Casas
-**Objetivo:** Predição de valores contínuos  
-**Técnicas:**
-- MLP para regressão
-- Normalização de features
-- Métricas: MAE, MSE, RMSE
-- Boston Housing dataset
-
-**Arquivos:**
-- [`prever_precos.py`](06-regressao-casas/prever_precos.py)
-
----
-
-#### 07 - Transfer Learning
-**Objetivo:** Reaproveitar modelos pré-treinados  
-**Técnicas:**
-- VGG16 (ImageNet weights)
-- Fine-tuning
-- Data augmentation
-- Cats vs Dogs classification
-
-**Arquivos:**
-- [`gatos_vs_caes.py`](07-transfer-learning/gatos_vs_caes.py)
-
----
-
-#### 08 - NLP: Análise de Sentimento
-**Objetivo:** Processamento de linguagem natural  
-**Técnicas:**
-- LSTM para sequências de texto
-- Word embeddings
-- IMDB reviews dataset
-- **Bônus:** Transformers (BERT/Hugging Face)
-
-**Arquivos:**
-- [`analise_sentimento.py`](08-nlp-sentimento/analise_sentimento.py)
-- [`bonus_transformer.py`](08-nlp-sentimento/bonus_transformer.py)
-
-</td>
-</tr>
-</table>
-
----
-
-
-## 🚀 Quick Start
+## Começo rápido
 
 ### Pré-requisitos
 
-- **Python 3.10+** (recomendado 3.10-3.12 para compatibilidade com TensorFlow)
-- **pip** (gerenciador de pacotes)
-- **git** (para clonar o repositório)
-- *Opcional:* GPU com suporte CUDA para treinamento acelerado
+- Python 3.10, 3.11 ou 3.12;
+- Git e `pip`;
+- ambiente virtual recomendado;
+- GPU opcional — os exemplos introdutórios funcionam em CPU.
+
+> TensorFlow e algumas bibliotecas podem ainda não oferecer suporte imediato às
+> versões mais recentes do Python. Python 3.11 é a opção mais conservadora para
+> reproduzir todo o ambiente atual.
 
 ### Instalação
-
-#### 1️⃣ Clone o repositório
 
 ```bash
 git clone https://github.com/Viniirb/neural-networks-from-scratch.git
 cd neural-networks-from-scratch
+python -m venv .venv
 ```
 
-#### 2️⃣ Crie um ambiente virtual
-
-<details>
-<summary><b>🪟 Windows</b></summary>
+Ative o ambiente:
 
 ```powershell
-# PowerShell
-python -m venv .venv
+# Windows PowerShell
 .\.venv\Scripts\Activate.ps1
 ```
 
-```bat
-:: CMD
-python -m venv .venv
-.\.venv\Scripts\activate
-```
-
-</details>
-
-<details>
-<summary><b>🐧 Linux / 🍎 macOS</b></summary>
-
 ```bash
-python3 -m venv .venv
+# Linux ou macOS
 source .venv/bin/activate
 ```
 
-</details>
-
-#### 3️⃣ Instale as dependências
+Instale as dependências:
 
 ```bash
-pip install --upgrade pip
-pip install -r requirements.txt
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
 
-<details>
-<summary>📦 <b>Principais pacotes instalados</b></summary>
+O `requirements.txt` representa o ambiente completo usado nos experimentos e é
+volumoso. A separação de dependências por módulo está prevista no
+[roadmap](ROADMAP.md). Para os primeiros conceitos, comece pelos scripts que
+usam apenas Python ou NumPy.
 
-- `tensorflow` / `keras` - Framework de deep learning
-- `numpy` - Computação numérica
-- `pandas` - Manipulação de dados
-- `matplotlib` / `seaborn` - Visualização
-- `scikit-learn` - ML utils e datasets
-- `opencv-python` - Processamento de imagens
-- `transformers` - Hugging Face (Transformers/BERT)
+## Executando os exemplos
 
-</details>
+Execute os comandos a partir da raiz do repositório:
 
-> ⚠️ **Nota sobre TensorFlow:** Se encontrar erros com Python 3.13+, considere usar Python 3.10-3.12. Consulte a [documentação oficial](https://www.tensorflow.org/install).
-
----
-
-
-## ▶️ Executando os Scripts
-
-Cada módulo pode ser executado independentemente. Navegue até a pasta e execute os scripts:
-
-### 🎯 Recomendação de Ordem
-
-```mermaid
-graph LR
-    A[01-Fundamentos] --> B[02-MLP]
-    B --> C[03-CNN]
-    C --> D[04-Inferência]
-    B --> E[05-Titanic]
-    B --> F[06-Regressão]
-    C --> G[07-Transfer Learning]
-    B --> H[08-NLP/Sentimento]
-```
-
-### 📜 Comandos por Módulo
-
-<table>
-<tr>
-<td>
-
-**Módulo 01 - Fundamentos**
 ```bash
+# Perceptron e portas lógicas
 python 01-fundamentos-perceptron/neuronio_simples.py
 python 01-fundamentos-perceptron/neuronio_que_aprende.py
-```
 
-</td>
-<td>
-
-**Módulo 02 - MLP**
-```bash
+# XOR e classificação Iris
 python 02-mpl-classificacao/rede_xor_pura.py
 python 02-mpl-classificacao/rede_xor_keras.py
 python 02-mpl-classificacao/rede_iris.py
-```
 
-</td>
-</tr>
-
-<tr>
-<td>
-
-**Módulo 03 - CNN**
-```bash
+# MNIST com MLP e CNN
 python 03-cnn-visao-computacional/rede_mnist_mpl.py
 python 03-cnn-visao-computacional/rede_mnist_cnn.py
-```
 
-</td>
-<td>
-
-**Módulo 04 - Inferência**
-```bash
+# Inferência com modelo salvo
 python 04-app-inferencia/usar_ia.py
-```
 
-</td>
-</tr>
-
-<tr>
-<td>
-
-**Módulo 05 - Data Science**
-```bash
+# Classificação e regressão tabular
 python 05-data-science-titanic/titanic_analise.py
-```
-
-</td>
-<td>
-
-**Módulo 06 - Regressão**
-```bash
 python 06-regressao-casas/prever_precos.py
-```
 
-</td>
-</tr>
-
-<tr>
-<td>
-
-**Módulo 07 - Transfer Learning**
-```bash
+# Transfer learning e NLP
 python 07-transfer-learning/gatos_vs_caes.py
-```
-*⏱️ Pode demorar: download de dataset + treinamento*
-
-</td>
-<td>
-
-**Módulo 08 - NLP**
-```bash
 python 08-nlp-sentimento/analise_sentimento.py
 python 08-nlp-sentimento/bonus_transformer.py
-```
-*🤗 Transformer requer Hugging Face Transformers*
 
-</td>
-</tr>
-</table>
-
----
-
-
-## 📊 Resultados e Métricas
-
-### 🎯 Performance dos Modelos
-
-<div align="center">
-
-| 🏆 Modelo | 🔧 Arquitetura | 📚 Dataset | 🎯 Métrica Principal | ⚡ Performance |
-|:---|:---|:---|:---|:---:|
-| **Perceptron** | 1 neurônio | Portas Lógicas (AND/OR) | Acurácia | **100%** ✅ |
-| **MLP (XOR)** | 2-2-1 (from scratch) | XOR Problem | Acurácia | **100%** ✅ |
-| **MLP (Iris)** | Dense layers | Iris (150 samples) | Acurácia | **~96%** ✅ |
-| **MLP (MNIST)** | Dense layers | MNIST Digits | Acurácia | **~97%** ⭐ |
-| **CNN (MNIST)** | Conv2D + Pooling | MNIST Digits | Acurácia | **~99%** 🚀 |
-| **MLP (Titanic)** | Dense layers | Titanic (891 samples) | Acurácia | **~80%** ⭐ |
-| **MLP (Regressão)** | Dense layers | Boston Housing | MAE | **Variável** 📊 |
-| **Transfer Learning** | VGG16 (fine-tuned) | Cats vs Dogs | Acurácia | **~92%** 🚀 |
-| **LSTM (IMDB)** | Embedding + LSTM | IMDB Reviews (25k) | Acurácia | **~87%** ⭐ |
-| **Transformer (BERT)** | Hugging Face Pipeline | English Texts | Confidence | **>90%** 🔥 |
-
-</div>
-
-> 📌 **Nota:** Os valores podem variar dependendo de seed aleatória, hiperparâmetros, número de épocas e configuração do ambiente.
-
-### 📈 Comparações Interessantes
-
-<details>
-<summary><b>🆚 MLP vs CNN no MNIST</b></summary>
-
-- **MLP:** ~97% de acurácia, mas sensível ao posicionamento dos dígitos
-- **CNN:** ~99% de acurácia, invariante a translações (pooling + convolução)
-- **Parâmetros:** CNN tem menos parâmetros por usar shared weights
-- **Treinamento:** CNN converge mais rápido e generaliza melhor
-
-</details>
-
-<details>
-<summary><b>🆚 LSTM vs Transformer (NLP)</b></summary>
-
-- **LSTM:** Treinada do zero, boa para sequences pequenas/médias
-- **Transformer (BERT):** Pré-treinado, zero-shot learning, state-of-the-art
-- **Tempo:** LSTM requer treinamento (~10-30min), Transformer usa modelo pronto
-- **Performance:** Transformer superior em praticamente todos os benchmarks
-
-</details>
-
----
-
-
-## 🧩 Modelos Treinados
-
-Os modelos treinados estão salvos no formato `.keras` (Keras 3.x) e podem ser carregados para inferência:
-
-```python
-from keras.models import load_model
-
-# Carregar modelo
-model = load_model('models/mnist_cnn_model.keras')
-
-# Fazer predições
-predictions = model.predict(new_data)
+# Experimentos rastreados com MLflow
+python 09-deep-mlp-parkinson/train_experiments.py
 ```
 
-### 📦 Modelos Disponíveis
+Alguns módulos baixam datasets ou modelos na primeira execução e podem consumir
+tempo, memória e rede. Consulte o código do módulo antes de executá-lo em um
+ambiente com recursos limitados.
 
-- [`models/mnist_cnn_model.keras`](models/mnist_cnn_model.keras) - CNN treinada no MNIST (~99% acc)
-- Outros modelos podem ser gerados executando os scripts de treinamento
+## Dados, modelos e reprodutibilidade
 
-> 💾 **Nota:** Modelos grandes (>10MB) e datasets estão no `.gitignore` para não sobrecarregar o repositório.
+- Datasets grandes e artefatos de treinamento não são versionados no Git.
+- O modelo demonstrativo [`models/mnist_cnn_model.keras`](models/mnist_cnn_model.keras)
+  é mantido para o exemplo de inferência.
+- Métricas podem variar conforme seed, hardware, versão das bibliotecas,
+  hiperparâmetros e divisão dos dados.
+- Novas contribuições devem informar a origem e a licença de cada dataset.
+- Resultados deste repositório são didáticos e não representam benchmarks
+  independentes ou garantias de desempenho.
 
----
+Para verificar rapidamente a sintaxe de todos os exemplos:
 
-## 🛠️ Tecnologias Utilizadas
+```bash
+python -m compileall -q .
+```
 
-<div align="center">
+O mesmo comando é executado pelo workflow
+[`Python smoke check`](.github/workflows/python-smoke.yml) em pushes e pull
+requests para `main`.
 
-### Core Frameworks
+## Estrutura do repositório
 
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
-[![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)](https://keras.io/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![Hugging Face](https://img.shields.io/badge/🤗_Hugging_Face-FFD21E?style=for-the-badge)](https://huggingface.co/)
+```text
+.
+├── 01-fundamentos-perceptron/
+├── 02-mpl-classificacao/
+├── 03-cnn-visao-computacional/
+├── 04-app-inferencia/
+├── 05-data-science-titanic/
+├── 06-regressao-casas/
+├── 07-transfer-learning/
+├── 08-nlp-sentimento/
+├── 09-deep-mlp-parkinson/
+├── models/
+├── .github/
+├── requirements.txt
+└── README.md
+```
 
-### Data Science & ML
+## Como contribuir
 
-[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge)](https://matplotlib.org/)
-[![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge)](https://seaborn.pydata.org/)
+Contribuições são bem-vindas, especialmente para:
 
-### Computer Vision
+- corrigir explicações, exemplos e problemas de reprodução;
+- adicionar testes rápidos para as implementações matemáticas;
+- documentar origem e licença dos datasets;
+- reduzir e separar dependências por módulo;
+- oferecer alternativas executáveis em CPU;
+- traduzir partes essenciais para inglês sem remover o foco em português.
 
-[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org/)
-[![Pillow](https://img.shields.io/badge/Pillow-3776AB?style=for-the-badge)](https://python-pillow.org/)
+Leia o [guia de contribuição](CONTRIBUTING.md), consulte o
+[roadmap](ROADMAP.md) e abra uma issue antes de implementar uma mudança extensa.
+Ao participar, siga o [Código de Conduta](CODE_OF_CONDUCT.md). Vulnerabilidades
+devem ser comunicadas conforme a [política de segurança](SECURITY.md).
 
-### Development
+## Status do projeto
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
-[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+Este é um projeto open source em estágio inicial. A API pública e a organização
+dos módulos ainda podem mudar. Não há, neste momento, uma promessa de
+compatibilidade entre releases.
 
-</div>
+Marcos planejados:
 
----
+- testes automatizados para os módulos fundamentais;
+- dependências menores e específicas por trilha;
+- documentação verificável de datasets e resultados;
+- primeira release versionada do conteúdo educacional.
 
-## 📚 Aprendizados
+Veja o [ROADMAP.md](ROADMAP.md) para detalhes.
 
-Durante este projeto, foram explorados diversos conceitos fundamentais e avançados:
+## Autor
 
-### 🧠 Conceitos Teóricos
+Criado e mantido por **Vinicius Rolim Barbosa**.
 
-- ✅ Neurônio artificial e função de ativação
-- ✅ Forward propagation e backpropagation
-- ✅ Gradiente descendente e otimizadores (SGD, Adam)
-- ✅ Overfitting, underfitting e regularização
-- ✅ Batch normalization e dropout
-- ✅ Convolutional layers e pooling
-- ✅ Recurrent Neural Networks (LSTM/GRU)
-- ✅ Transfer Learning e fine-tuning
-- ✅ Word embeddings e attention mechanism
+- GitHub: [@Viniirb](https://github.com/Viniirb)
+- LinkedIn: [vinicius-rolim](https://www.linkedin.com/in/vinicius-rolim)
 
-### 💡 Práticas de Engenharia
+## Licença
 
-- ✅ Pré-processamento de dados (normalização, encoding)
-- ✅ Data augmentation para imagens
-- ✅ Train/validation/test split
-- ✅ Callbacks (EarlyStopping, ModelCheckpoint)
-- ✅ Métricas de avaliação (accuracy, precision, recall, MAE, etc.)
-- ✅ Visualização de resultados (loss curves, confusion matrix)
-- ✅ Salvamento e carregamento de modelos
-- ✅ Integração com bibliotecas modernas (Hugging Face)
-
----
-
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas. Consulte o [guia de contribuição](CONTRIBUTING.md)
-e o [Código de Conduta](CODE_OF_CONDUCT.md) antes de começar.
-
-Se você encontrou um bug, tem uma sugestão ou quer adicionar um novo exemplo:
-
-1. Fork este repositório
-2. Crie uma branch para sua feature (`git checkout -b feature/NovoModulo`)
-3. Commit suas mudanças (`git commit -m 'Adiciona novo módulo de GAN'`)
-4. Push para a branch (`git push origin feature/NovoModulo`)
-5. Abra um Pull Request
-
-### 💡 Ideias para Contribuir
-
-- 🎨 Adicionar GAN (Generative Adversarial Networks)
-- 🗣️ Expandir NLP com mais modelos (GPT, T5)
-- 🎵 Adicionar RNN para geração de música
-- 🎮 Reinforcement Learning (DQN, A3C)
-- 📊 Dashboard interativo com Streamlit
-- 🐳 Dockerização do projeto
-
----
-
-
-## 👤 Autor
-
-<div align="center">
-
-<img src="https://github.com/Viniirb.png" width="150px" style="border-radius: 50%;" alt="Vinicius Rolim Barbosa"/>
-
-### Vinicius Rolim Barbosa
-
-*Software Engineer | Deep Learning Enthusiast | AI Researcher*
-
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Viniirb)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vinicius-rolim)
-
----
-
-### 📬 Contato
-
-💬 Dúvidas ou sugestões? Abra uma [issue](https://github.com/Viniirb/neural-networks-from-scratch/issues) no repositório!
-
----
-
-### ⭐ Se este projeto te ajudou, considere dar uma estrela!
-
-<sub>Feito com 💙 e muitas horas de estudo</sub>
-
-</div>
-
----
-
-<div align="center">
-
-### 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-**© 2024-2026 Vinicius Rolim Barbosa** | [github.com/Viniirb](https://github.com/Viniirb)
-
-</div>
-
-
+Distribuído sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE).
