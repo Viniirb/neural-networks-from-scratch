@@ -17,7 +17,8 @@
 ![Pandas](https://img.shields.io/badge/Pandas-2.x-150458?style=flat-square&logo=pandas&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.x-11557c?style=flat-square)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+[![Python smoke check](https://github.com/Viniirb/neural-networks-from-scratch/actions/workflows/python-smoke.yml/badge.svg)](https://github.com/Viniirb/neural-networks-from-scratch/actions/workflows/python-smoke.yml)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 ---
@@ -56,6 +57,7 @@ Este repositório documenta uma **jornada completa de aprendizado em Deep Learni
 - [🛠️ Tecnologias Utilizadas](#️-tecnologias-utilizadas)
 - [📚 Aprendizados](#-aprendizados)
 - [🤝 Contribuindo](#-contribuindo)
+- [🗺️ Roadmap](ROADMAP.md)
 - [👤 Autor](#-autor)
 
 </details>
@@ -64,7 +66,7 @@ Este repositório documenta uma **jornada completa de aprendizado em Deep Learni
 
 ## 📂 Estrutura dos Módulos
 
-O projeto está organizado em **8 módulos progressivos**, cada um explorando diferentes aspectos do Deep Learning:
+O projeto está organizado em **9 módulos progressivos**, cada um explorando diferentes aspectos do Deep Learning:
 
 <table>
 <tr>
@@ -504,7 +506,10 @@ Durante este projeto, foram explorados diversos conceitos fundamentais e avança
 
 ## 🤝 Contribuindo
 
-Contribuições são bem-vindas! Se você encontrou um bug, tem uma sugestão ou quer adicionar um novo exemplo:
+Contribuições são bem-vindas. Consulte o [guia de contribuição](CONTRIBUTING.md)
+e o [Código de Conduta](CODE_OF_CONDUCT.md) antes de começar.
+
+Se você encontrou um bug, tem uma sugestão ou quer adicionar um novo exemplo:
 
 1. Fork este repositório
 2. Crie uma branch para sua feature (`git checkout -b feature/NovoModulo`)
@@ -536,7 +541,6 @@ Contribuições são bem-vindas! Se você encontrou um bug, tem uma sugestão ou
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Viniirb)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vinicius-rolim)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vinicius@example.com)
 
 ---
 
